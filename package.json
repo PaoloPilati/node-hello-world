@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "name": "node-hello-world",
+    "version": 1.0.0,
+    "description": "Testing npm init, package.jsn, and a js-vanilla useState",
+    "main": "index.js",
+    "axios": "^1.13.6",
+    "scripts": {
+      "start": "node scripts/index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs"
+  }
+}
