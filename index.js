@@ -19,5 +19,5 @@ function makeState(getter) {
 
 const callout = makeState(debut);
 
-callout() // callout() richiama lo stato con il suo valore iniziale ---> II funzione eseguita nel call stack
+callout() // callout() richiama lo stato con il suo valore corrente (debut) ---> II funzione eseguita nel call stack
 callout("Hello Boolean!") // ---> III funzione eseguita nel call stack
