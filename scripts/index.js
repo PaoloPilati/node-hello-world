@@ -27,9 +27,14 @@ function eventLoopOrganizer() {
       console.log("Chiamata API:", debut);
 
       const callout = makeState(debut);
+      const mode = process.env.MODE;
 
-      callout();
-      callout("Hello Boolean!");
+      if (mode === "watch") {
+        callout("Hello Boolean!")
+      }
+      else {
+        callout()
+      };
     })
     .catch(error => {
       console.error("API Error:", error);
